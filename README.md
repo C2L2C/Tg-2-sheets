@@ -7,16 +7,22 @@ How to use:
 
 1. Clone the repo.
     git clone 
-2. Create a new google project, enable sheets API and generate credentials (it will be a json file) as follows:
+2. Create a new google project, enable sheets API and generate credentials (credentials.json) as follows:
 
     ![Sheets API creds](https://s3.amazonaws.com/com.twilio.prod.twilio-docs/original_images/google-developer-console.gif)
+
+3. Create a new google spreadsheet and share it with the email mentioned in the `client_email` field in `credentials.json`  
+   generated from step 2.
+
 3. Run the script as follows:
       ```
       python refreshTG.py
       ```
 4. Provide the spreadsheets URL, would look something like this:
                 `https://docs.google.com/spreadsheets/d/<spreadsheet_ID>/edit#gid=xxxxxxxx`
-                
-5. And you are done!
+
+5. Provide the spreadsheet name.
+
+6. And you are done!
 
 Thanks.
